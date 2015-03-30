@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+    	android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/item_vertical_margin_for_if_other"
+	    android:layout_marginBottom="@dimen/item_vertical_margin_for_if_other"
+	    android:orientation="horizontal" >
+        <TextView
+            android:layout_width="@dimen/start_end_of_year_width"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/item_horizontal_margin"
+            android:text="@string/start_of_year"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <RadioGroup
+           	android:id="@+id/start_of_year"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:visibility="invisible"
+		    android:orientation="horizontal" >
+			<RadioButton android:id="@+id/start_of_year_yes"
+		        android:layout_width="0dp"
+		        android:layout_height="@dimen/radiobutton_layout_height"
+		        android:layout_weight="1"
+		        android:singleLine="true"
+		        android:background="@drawable/radio_button_background"
+		        android:button="@null"
+		        android:gravity="center"
+		        android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:text="@string/yes"/>
+		    <RadioButton android:id="@+id/start_of_year_sometimes"
+		        android:layout_width="0dp"
+		        android:layout_height="@dimen/radiobutton_layout_height"
+		        android:layout_weight="1"
+		        android:singleLine="true"
+		        android:background="@drawable/radio_button_background"
+		        android:button="@null"
+		        android:gravity="center"
+		        android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:text="@string/sometimes"/>
+		    <RadioButton android:id="@+id/start_of_year_no"
+		        android:layout_width="0dp"
+		        android:layout_height="@dimen/radiobutton_layout_height"
+		        android:layout_weight="1"
+		        android:singleLine="true"
+		        android:background="@drawable/radio_button_background"
+		        android:button="@null"
+		        android:gravity="center"
+		        android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:text="@string/no"/>
+		</RadioGroup>
+	</LinearLayout>
+	
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+        <TextView
+        android:layout_width="@dimen/start_end_of_year_width"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/item_horizontal_margin"
+        android:text="@string/end_of_year"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+        <RadioGroup
+			android:id="@+id/end_of_year"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:visibility="invisible"
+			android:orientation="horizontal" >
+		    <RadioButton android:id="@+id/end_of_year_yes"
+		        android:layout_width="0dp"
+		        android:layout_height="@dimen/radiobutton_layout_height"
+		        android:layout_weight="1"
+		        android:singleLine="true"
+		        android:background="@drawable/radio_button_background"
+		        android:button="@null"
+		        android:gravity="center"
+		        android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:text="@string/yes"/>
+		    <RadioButton android:id="@+id/end_of_year_sometimes"
+		        android:layout_width="0dp"
+		        android:layout_height="@dimen/radiobutton_layout_height"
+		        android:layout_weight="1"
+		        android:singleLine="true"
+		        android:background="@drawable/radio_button_background"
+		        android:button="@null"
+		        android:gravity="center"
+		        android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:text="@string/sometimes"/>
+		    <RadioButton android:id="@+id/end_of_year_no"
+		        android:layout_width="0dp"
+		        android:layout_height="@dimen/radiobutton_layout_height"
+		        android:layout_weight="1"
+		        android:singleLine="true"
+		        android:background="@drawable/radio_button_background"
+		        android:button="@null"
+		        android:gravity="center"
+		        android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:text="@string/no"/>
+		</RadioGroup>
+	</LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,974 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+		    android:paddingLeft="@dimen/activity_horizontal_margin"
+		    android:paddingRight="@dimen/activity_horizontal_margin"
+		    android:paddingTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical" >
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/item_vertical_margin"
+                android:text="@string/head_start_family_assessment"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/childs_name"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/childs_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/parents_guardians_name"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/parents_guardians_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/staff_name"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/staff_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/date_of_start_of_year_assessment"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/date_of_start_of_year_assessment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editDateTime"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/date_of_end_of_year_assessment"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/date_of_end_of_year_assessment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editDateTime"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+            
+            
+            
+            <!-- POSITIVE PARENT-CHILD RELATIONSHIPS -->
+            
+            <ImageView 
+		        android:contentDescription="@string/separator"
+		   	    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="40dp"
+			    android:scaleX="10"
+			    android:src="@drawable/imageview_separator" />
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/positive_parent_child_relationships"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/my_parenting_skills_are_effective"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/my_parenting_skills_are_effective"
+		        layout="@layout/start_end_of_year_component"/>
+                  
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/meet_my_childs_needs"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/meet_my_childs_needs"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/soothe_my_child"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/soothe_my_child"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/avoid_using_physical_punishment"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/avoid_using_physical_punishment"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/understand_my_childs_needs"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/understand_my_childs_needs"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/my_child_may_not_always_do_as_I_say"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/my_child_may_not_always_do_as_I_say"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/spend_special_time_with_my_child"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/spend_special_time_with_my_child"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/how_would_you_describe_your_relationship"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/how_would_you_describe_your_relationship"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="3"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/what_is_the_most_difficult_part"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/what_is_the_most_difficult_part"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="3"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+            
+            
+            
+            <!-- FAMILIES AS LIFELONG EDUCATORS -->
+            
+            <ImageView 
+		        android:contentDescription="@string/separator"
+		   	    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="40dp"
+			    android:scaleX="10"
+			    android:src="@drawable/imageview_separator" />
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/positive_parent_child_relationships"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/my_childs_behavior_has_meaning"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/my_childs_behavior_has_meaning"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/learn_by_exploring_the_environment"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/learn_by_exploring_the_environment"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/We_have_family_rules_and_daily_routines_that_we_follow"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/We_have_family_rules_and_daily_routines_that_we_follow"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/I_create_activities_at_home_to_support_my_childs_learning"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/I_create_activities_at_home_to_support_my_childs_learning"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/developing_a_positive_relationship"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/developing_a_positive_relationship"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/What_are_your_hopes_for_your_child’s_future"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/What_are_your_hopes_for_your_child’s_future"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="3"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/What_do_you_hope_your_child_will_learn_while_in_Head_Start"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/What_do_you_hope_your_child_will_learn_while_in_Head_Start"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="3"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+            
+            
+            
+            
+            <!-- FAMILY CONNECTIONS TO PEERS AND COMMUNITY -->
+            
+            <ImageView 
+		        android:contentDescription="@string/separator"
+		   	    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="40dp"
+			    android:scaleX="10"
+			    android:src="@drawable/imageview_separator" />
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/family_connections_to_peers_and_community"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/I_have_family_members_and_or_friends"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/I_have_family_members_and_or_friends"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/My_child_spends_time_playing_with_other_children"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/My_child_spends_time_playing_with_other_children"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/I_have_a_positive_relationship_with_my_neighbors"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/I_have_a_positive_relationship_with_my_neighbors"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/I_like_exploring_my_community_with_my_family"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/I_like_exploring_my_community_with_my_family"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/I_participate_in_community_groups_such_as_church"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/I_participate_in_community_groups_such_as_church"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/I_utilize_other_agency_supports"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/I_utilize_other_agency_supports"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/I_have_someone_to_care_for_my_child_when_needed"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/I_have_someone_to_care_for_my_child_when_needed"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/I_feel_my_children_access_to_quality"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/I_feel_my_children_access_to_quality"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/If_you_have_utilized_other_agency"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/If_you_have_utilized_other_agency"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="3"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/How_would_you_describe_your_family"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/How_would_you_describe_your_family"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="3"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+            
+            
+            
+            
+            <!-- FAMILY WELL-BEING -->
+            
+            <ImageView 
+		        android:contentDescription="@string/separator"
+		   	    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="40dp"
+			    android:scaleX="10"
+			    android:src="@drawable/imageview_separator" />
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/FAMILY_WELL_BEING"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/I_feel_safe_in_my_home_and_community"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/I_feel_safe_in_my_home_and_community"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/I_am_satisfied_with_my_current_living_situation"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/I_am_satisfied_with_my_current_living_situation"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/My_home_is_safe_and_in_good_physical_condition"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/My_home_is_safe_and_in_good_physical_condition"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/meet_basic_needs_such_as_food_and_housing"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/meet_basic_needs_such_as_food_and_housing"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/I_pay_my_bills_regularly_and_on_time"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/I_pay_my_bills_regularly_and_on_time"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/I_am_satisfied_with_my_current_employment_status"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/I_am_satisfied_with_my_current_employment_status"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/My_family_health_needs_are_met"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/My_family_health_needs_are_met"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/I_know_how_to_plan_nutritious_family_meals"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/I_know_how_to_plan_nutritious_family_meals"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/I_feel_safe_in_my_closest_relationships"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/I_feel_safe_in_my_closest_relationships"
+		        layout="@layout/start_end_of_year_component"/>
+            
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/cope_with_the_daily_frustrations_of_life"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/cope_with_the_daily_frustrations_of_life"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/which_is_the_greatest_concern_for_you"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/which_is_the_greatest_concern_for_you"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="3"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+
+            
+            
+            
+            <!-- FAMIIES AS ADVOCATES AND LEADERS -->
+            
+            <ImageView 
+		        android:contentDescription="@string/separator"
+		   	    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="40dp"
+			    android:scaleX="10"
+			    android:src="@drawable/imageview_separator" />
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/FAMIIES_AS_ADVOCATES_AND_LEADERS"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/advocate_for_what_is_best_for_my_child_and_family"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/advocate_for_what_is_best_for_my_child_and_family"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/participate_in_Parent_Teacher_Conferences"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/participate_in_Parent_Teacher_Conferences"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/a_leader_in_a_community_group"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/a_leader_in_a_community_group"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/comfortable_talking_in_a_large_group"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/comfortable_talking_in_a_large_group"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/research_information_to_support_my_familys_needs"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/research_information_to_support_my_familys_needs"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/I_have_a_voice_and_can_change_my_community"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/I_have_a_voice_and_can_change_my_community"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/opportunities_to_better_myself_and_my_family"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/opportunities_to_better_myself_and_my_family"
+		        layout="@layout/start_end_of_year_component"/>
+            
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/accomplish_for_yourself_while_your_child_is_enrolled"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/accomplish_for_yourself_while_your_child_is_enrolled"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="3"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+            
+            
+            
+            <!-- HOME LITERACY ENVIRONMENT -->
+            
+            <ImageView 
+		        android:contentDescription="@string/separator"
+		   	    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="40dp"
+			    android:scaleX="10"
+			    android:src="@drawable/imageview_separator" />
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/HOME_LITERACY_ENVIRONMENT"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/crayons_pencils_and_paper_available"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/crayons_pencils_and_paper_available"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/access_to_at_least_10_picture_books"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/access_to_at_least_10_picture_books"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/read_a_picture_book_with_my_child"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/read_a_picture_book_with_my_child"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/have_detailed_and_informative_conversations"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/have_detailed_and_informative_conversations"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/sees_me_reading_books"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/sees_me_reading_books"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/a_good_reader_and_feel_comfortable"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/a_good_reader_and_feel_comfortable"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/my_child_will_work_to_his_or_her_potential"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <include 
+                android:id="@+id/my_child_will_work_to_his_or_her_potential"
+		        layout="@layout/start_end_of_year_component"/>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/introduced_your_child_to_the_alphabet"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/introduced_your_child_to_the_alphabet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="3"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/Do_you_have_a_library_card"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/Do_you_have_a_library_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="3"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+            
+            
+            
+            
+            
+            <Button
+                android:id="@+id/button_done"
+                android:layout_width="@dimen/button_done_layout_width"
+                android:layout_height="@dimen/button_done_layout_height"
+                android:layout_margin="@dimen/button_done_margin"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:onClick="onDoneForm"
+                android:text="@string/done"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

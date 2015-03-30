@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    <corners
+        android:radius="@dimen/corner_radius_radioButton" />
+    <solid
+        android:color="@color/light_blue" />
+    <stroke
+        android:width="2dp"
+        android:color="#808080" />
+</shape>

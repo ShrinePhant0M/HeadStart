@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dialog_margin"
+    android:paddingBottom="@dimen/dialog_margin"
+	android:paddingLeft="@dimen/dialog_margin"
+	android:paddingRight="@dimen/dialog_margin"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:gravity="right" >
+        <Button
+            android:id="@+id/button_voiceRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/google_voice" />
+        <Button
+            android:id="@+id/button_sphinx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:text="@string/sphinx_voice" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/test_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/test_target_string"
+            android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:layout_margin="@dimen/test_mode_textView_margin"
+	        android:text=""
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+        <TextView
+            android:id="@+id/test_ratio"
+            android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="@dimen/test_mode_textView_margin"
+	        android:gravity="center"
+	        android:text=""
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+    
+    <EditText
+        android:id="@+id/content_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="textCapSentences|textMultiLine|textAutoCorrect"
+        android:hint="@string/edit_from_here" />
+
+</LinearLayout>

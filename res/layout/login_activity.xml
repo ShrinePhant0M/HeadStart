@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center" >
+
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/login_margin"
+        android:text="@string/login"
+        android:textColor="@color/light_blue"
+        android:textSize="40sp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <EditText  
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/login_margin"
+		android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+        android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+        android:paddingTop="@dimen/clickable_textView_vertical_padding"
+        android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+        android:background="@drawable/clickable_textview_bg"
+		android:width="@dimen/login_width"
+		android:maxLength="20"
+		android:inputType="textPersonName"
+		android:hint="@string/username"
+		android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <EditText 
+        android:id="@+id/password"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_margin="@dimen/login_margin"
+		android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+		android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+		android:paddingTop="@dimen/clickable_textView_vertical_padding"
+		android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+		android:background="@drawable/clickable_textview_bg"
+		android:width="@dimen/login_width"
+		android:maxLength="20"
+		android:inputType="textPassword"
+		android:imeOptions="actionGo"
+		android:hint="@string/password"
+		android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="@dimen/button_login_layout_width"
+        android:layout_height="@dimen/button_done_layout_height"
+        android:layout_marginTop="@dimen/button_done_margin"
+        android:gravity="center"
+        android:enabled="false"
+        android:onClick="login"
+        android:text="@string/login_button"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+
+    <Button
+        android:id="@+id/link_to_dropbox_button"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/button_done_layout_height"
+        android:layout_marginTop="@dimen/button_done_margin"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:onClick="onClickLinkToDropbox"
+        android:text="@string/link_to_dropbox"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        
+    
+</LinearLayout>

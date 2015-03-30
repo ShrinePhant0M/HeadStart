@@ -1,0 +1,15 @@
+<resources>
+
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        
+    </style>
+    
+    <style name="MyActionBar" parent="@android:style/Widget.ActionBar"></style>
+    
+    <color name="seperator">#222</color>
+    <color name="light_blue">#3bb9ff</color>
+
+</resources>

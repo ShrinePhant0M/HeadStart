@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center" >
+        
+    <Button
+        android:id="@+id/family_demographics"
+        android:layout_width="450dp"
+        android:layout_height="@dimen/button_done_layout_height"
+        android:layout_marginTop="@dimen/button_done_margin"
+        android:gravity="center"
+        android:onClick="startSubForms"
+        android:text="@string/head_start_family_demographics"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <Button
+        android:id="@+id/family_assessment"
+        android:layout_width="450dp"
+        android:layout_height="@dimen/button_done_layout_height"
+        android:layout_marginTop="@dimen/button_done_margin"
+        android:gravity="center"
+        android:onClick="startSubForms"
+        android:text="@string/head_start_family_assessment"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+</LinearLayout>

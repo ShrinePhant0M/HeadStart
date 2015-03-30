@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Head Start</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="splash_screen_description">Splash Screen</string>
+    
+    <!-- General -->
+    
+    <string name="test_mode">Test Mode</string>
+    <string name="test_mode_enabled">Test Mode enabled</string>
+    <string name="test_mode_disabled">Test Mode disabled</string>
+    
+    <string name="populate_form">Populate Form</string>
+    
+    <string name="separator">Separator</string>
+    <string name="done">Done</string>
+    <string name="ok">OK</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear">Clear</string>
+    <string name="add">Add</string>
+    
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="sometimes">sometimes</string>
+    <string name="other">Other</string>
+    <string name="if_other">If other:</string>
+    <string name="of_which_the_content_is">Provide details below:</string>
+    <string name="if_yes">If yes:</string>
+    
+
+    
+    
+    <!-- Login Activity -->
+    
+    <string name="login">LOGIN</string>
+    <string name="login_button">Log In</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="link_to_dropbox">Haven\'t linked to dropbox -> Link to Dropbox</string>
+    <string name="switch_dropbox_account"> Already linked to dropbox -> Switch Accounts</string>
+    <string name="unlink_message">
+        	"You must first unlink the current linked account to switch to another account.\n\n" +
+	    	"You can still use this app offline with any account already signed in.\n\n" +
+	    	"Unlink an account offline will cause you not to be able to log into any account resulting in this App being not applicable!\n\n" +
+	    	"Yes to unlink the current account and proceed to swtich accounts, No to cancel."</string>
+    
+    
+    
+    <!-- Family selection Activity -->
+    
+    <string name="add_child">Add a new child:</string>
+    <string name="select_child">Select a existing child:</string>
+    <string name="enter_forms">Start Editing Forms</string>
+    
+    
+    
+    <!-- Signature Capture Activity -->
+    
+    <string name="external_dir">GetSignature</string>
+    <string name="print_name">Print Name:</string>
+    <string name="please_sign_below">Please Sign below ...</string>
+    <string name="Type_your_name_here">Type your name here</string>
+    
+    
+    
+    
+    <!-- Date Time Dialog -->
+    
+    <string name="date_time_title">Set Date/Time</string>
+    <string name="set_date">Date</string>
+    <string name="set_time">Time</string>
+    
+    
+    
+    
+    <!-- EditText Dialog -->
+    
+    <string name="edit_the_text">Edit the Content</string>
+    <string name="google_voice">Google Voice</string>
+    <string name="sphinx_voice">Sphinx Voice</string>
+    <string name="edit_from_here">Edit from here</string>
+    
+    <string name="please_speak_google">\nPlease speak now\n</string>
+    <string name="analyzing_speech">Analyzing Speech...</string>
+    <string name="please_wait_while_the_speech_is_being_analyzed">Please wait while the speech is being analyzed.</string>
+    
+    
+    
+    <!-- Sphinx Dialog  -->
+    
+    <string name="preparing_the_recognizer">Preparing the recognizer</string>
+    <string name="fail_to_init">Failed to init recognizer</string>
+    <string name="please_speak_sphinx">Please speak now</string>
+    
+    <string name="digits_caption">
+        "1. allow [child] to choose &lt;noisy words&gt; from selection\n"
+		"2. parents completed &lt;noisy words&gt; previous assignment\n"
+		"3. begins &lt;noisy words&gt; associative play\n"
+		"4. [CDP] ([[and][reviewed today's family play group]]| [[and] [invite mom to upcoming play group]])+\n"
+		"5. [CDP] [will] encourage associative play [through|via] animated demonstration [and purposeful play]\n"
+		"6. Encourage more book (exploration | reading) &lt;noisy words&gt; during the week\n"
+		"7. ((Start talking)|talk) about safety proofing in mom's parents' home\n"
+		"8. [They have] read &lt;#one-ten&gt; times together this week\n"
+		"9. Replaces &lt;noisy words&gt; some objects where &lt;noisy words&gt; they belong\n"
+		"10. Come to group at least once before (the program|this|the) year ends\n"
+		"11. Put the toys back to their original places\n"
+		"12. Come to group with [the] kids"
+	</string>
+    
+    <string-array name="number_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    
+    <string-array name="text_array">
+        <item>1; allow [child] to choose from selection</item>
+        <item>2; parents completed previous assignment</item>
+        <item>3; begins associative play</item>
+        <item>4; [CDP] ([[and][reviewed today\'s family play group]]| [[and] [invite mom to upcoming play group]])+</item>
+        <item>5; [CDP] [will] encourage associative play [through|via] animated demonstration [and purposeful play]</item>
+        <item>6; encourage more book (exploration | reading) during the week</item>
+        <item>7; [start talking] talk about safety proofing in mom\'s parents\' home</item>
+        <item>8; [they have] read # times together this week</item>
+        <item>9; replaces some objects where they belong</item>
+        <item>10; come to group at least once before (the program|this|the) year ends</item>
+        <item>11; put the toys back to their original places</item>
+        <item>12; come to group with [the] kids</item>
+    </string-array>
+    
+    
+    
+    
+    <!-- Family Demographics -->
+    
+    <string name="head_start_family_demographics">Head Start Family Demographics</string>
+    <string name="childs_name">Child\'s name</string>
+    <string name="birthday">Birthday</string>
+    <string name="start_date">Start Date</string>
+    <string name="address">Address</string>
+    <string name="temporary_living_condition">Temporary Living Condition</string>
+    <string name="transportation">Parent\'s Name(s)</string>
+    <string name="self_transport">Self transport</string>
+    <string name="bussed">Bussed</string>
+    
+    <string name="primary_contact_person">Primary Contact Person</string>
+    <string name="relationship">Relationship</string>
+    <string name="phone">Phone</string>
+    <string name="mother">Mother</string>
+    <string name="father">Father</string>
+    <string name="preferred_method_of_contact">Preferred Method of Contact</string>
+    <string name="email">Email</string>
+    <string name="text">Text</string>
+    <string name="best_availability">Best Availability</string>
+    <string name="morning">Morning</string>
+    <string name="afternoon">Afternoon</string>
+    <string name="evening">Evening</string>
+    <string name="access_to_a_computer">Access to a Computer</string>
+
+    <string name="secondary_contact_person">Secondary Contact Person</string>
+    
+    <string name="primary_language_spoken_at_home">Primary Language Spoken at Home</string>
+    <string name="english">English</string>
+    <string name="spanish">Spanish</string>
+    <string name="arabic">Arabic</string>
+    
+    <string name="is_either_parent_an_active_member">Is either parent/guadian an active member of the Military(Who)</string>
+    <string name="circle_resources">Circle Resources</string>
+    <string name="tanf">TANF</string>
+    <string name="ssi">SSI</string>
+    <string name="snap_food_stamps">SNAP/Food Stamps</string>
+    <string name="wic">WIC</string>
+    <string name="housing">Housing</string>
+    <string name="child_support">Child Support</string>
+    <string name="med_assist">Med. Asssit.</string>
+    
+    <string name="do_you_receive_child_care_subsidy">Do you receive child care subsidy?</string>
+    <string name="is_this_child_in_foster_or_kin_care">Is this child in Foster or Kin Care</string>
+    <string name="open_cy_case">Open C&amp;Y case</string>
+    <string name="are_there_any_written_custody_arrangements">Are there any written custody arrangements?</string>
+    <string name="pfa">PFA</string>
+    <string name="against_whom">Against Whom</string>
+    <string name="pc_rep">PC rep</string>
+    <string name="are_there_pets_in_the_home">Are there pets in the home?</string>
+    
+    <string name="num_of_adults_living_in_household"># of Adults living in household</string>
+    <string name="num_of_children_living_in_household"># of Children living in household</string>
+    
+    <string name="num_of_years_parent_in_hs_ehs_program"># of Years Parent in HS/EHS program</string>
+    <string name="sibling_in_HS_EHS">Sibling in HS/EHS</string>
+    <string name="does_child_receive_any_special_services">Does child receive any special services? (MH, IEP, TSS, etc.)</string>
+    
+    
+    
+    
+    <!-- Family Assessment -->
+    
+    <string name="head_start_family_assessment">Head Start Family Assessment</string>
+    <string name="parents_guardians_name">parent(s)/guadian(s) Name</string>
+    <string name="staff_name">Staff Name</string>
+    <string name="date_of_start_of_year_assessment">Date of Start of Year Assessment</string>
+    <string name="date_of_end_of_year_assessment">Date of End of Year Assessment</string>
+    
+    
+    <string name="start_of_year">Start of Year</string>
+    <string name="end_of_year">End of Year</string>
+    <string name="for_each_statement_in_this_assessment">
+		"For each statement in this assessment, give a response of 1, 2 or 3 indicating how "
+		"you feel the statement fits you: 1 is “yes”, 2 is “not sure” or “sometimes”, and 3 is “no”."</string>
+	<string name="totals">Totals</string>	
+	
+	
+	<string name="positive_parent_child_relationships">POSITIVE PARENT-CHILD RELATIONSHIPS</string>	   
+    <string name="my_parenting_skills_are_effective">I am confident that my parenting skills are effective</string>
+    <string name="meet_my_childs_needs">I am able to meet my child\'s needs</string>
+    <string name="soothe_my_child">I know how to soothe my child when he/she is upset</string>
+    <string name="avoid_using_physical_punishment">I avoid using physical punishment when my child does something wrong</string>
+    <string name="understand_my_childs_needs">I understand my child\'s needs</string>
+    <string name="my_child_may_not_always_do_as_I_say">I realize my child may not always do as I say</string>
+    <string name="spend_special_time_with_my_child">I spend special time with my child doing things that he/she enjoys</string>
+    <string name="how_would_you_describe_your_relationship">How would you describe your relationship with your child(ren)?</string>
+    <string name="what_is_the_most_difficult_part">What is the most difficult part of parenting for you?</string>
+    
+    
+    <string name="families_as_lifelong_educators">FAMILIES AS LIFELONG EDUCATORS</string>
+    <string name="my_childs_behavior_has_meaning">I understand that my child\'s behavior has meaning</string>
+    <string name="learn_by_exploring_the_environment">I allow my child to learn by exploring the environment</string>
+    <string name="We_have_family_rules_and_daily_routines_that_we_follow">We have family rules and daily routines that we follow</string>
+    <string name="I_create_activities_at_home_to_support_my_childs_learning">I create activities at home to support my child\'s learning</string>
+    <string name="developing_a_positive_relationship">I understand the importance of developing a positive relationship with my child\'s teacher</string>
+    <string name="What_are_your_hopes_for_your_child’s_future">What are your hopes for your child\'s future?</string>
+    <string name="What_do_you_hope_your_child_will_learn_while_in_Head_Start">What do you hope your child will learn while in Head Start/Early Head Start?</string>
+    
+    
+    <string name="family_connections_to_peers_and_community">FAMILY CONNECTIONS TO PEERS AND COMMUNITY</string>
+    <string name="I_have_family_members_and_or_friends">I have family members and/or friends who I can ask for help when I need it.</string>
+    <string name="My_child_spends_time_playing_with_other_children">My child spends time playing with other children.</string>
+    <string name="I_have_a_positive_relationship_with_my_neighbors">"I have a positive relationship with my neighbors.</string>
+    <string name="I_like_exploring_my_community_with_my_family">I like exploring my community with my family - i.e. library, festivals, and parks.</string>
+    <string name="I_participate_in_community_groups_such_as_church">I participate in community groups such as church, neighborhood watch, etc.</string> 
+    <string name="I_utilize_other_agency_supports">I utilize other agency supports/services when I need to.</string>
+    <string name="I_have_someone_to_care_for_my_child_when_needed">I have someone to care for my child when needed.</string>
+    <string name="I_feel_my_children_access_to_quality">I feel my children access to quality, affordable child care.</string>
+    <string name="If_you_have_utilized_other_agency">If you have utilized other agency supports/services, please describe the service and how it helped your family.</string>
+    <string name="How_would_you_describe_your_family">How would you describe your family, your friends, and your community?</string>
+    
+    
+    <string name="FAMILY_WELL_BEING">FAMILY WELL-BEING</string>
+    <string name="I_feel_safe_in_my_home_and_community">I feel safe in my home and community.</string>
+    <string name="I_am_satisfied_with_my_current_living_situation">I am satisfied with my current living situation.</string>
+    <string name="My_home_is_safe_and_in_good_physical_condition">My home is safe and in good physical condition.</string>
+    <string name="meet_basic_needs_such_as_food_and_housing">I am able to meet basic needs such as food and housing</string>
+    <string name="I_pay_my_bills_regularly_and_on_time">I pay my bills regularly and on time</string>
+    <string name="I_am_satisfied_with_my_current_employment_status">I am satisfied with my current employment status.</string>
+    <string name="My_family_health_needs_are_met">My family health needs are met.</string>
+    <string name="I_know_how_to_plan_nutritious_family_meals">I know how to plan nutritious family meals.</string>
+    <string name="I_feel_safe_in_my_closest_relationships">>I feel safe in my closest relationships.</string>
+    <string name="cope_with_the_daily_frustrations_of_life">I am able to cope with the daily frustrations of life</string>
+    <string name="which_is_the_greatest_concern_for_you">Of all of the questions you answered with a 2 or 3, which is the greatest concern for you?</string>
+    
+    
+	<string name="FAMIIES_AS_ADVOCATES_AND_LEADERS">FAMIIES AS ADVOCATES AND LEADERS</string>
+    <string name="advocate_for_what_is_best_for_my_child_and_family">I know how to advocate for what is best for my child and family.</string>
+   	<string name="participate_in_Parent_Teacher_Conferences">I know how important it is to participate in Parent-Teacher Conferences and/or Home Visits.</string>
+	<string name="a_leader_in_a_community_group">I am a leader in a community group - such as church, PTA, etc.</string>
+	<string name="comfortable_talking_in_a_large_group">I am comfortable talking in a large group.</string>
+    <string name="research_information_to_support_my_familys_needs">I am able to research information to support my family\'s needs.</string>
+    <string name="I_have_a_voice_and_can_change_my_community">I believe I have a voice and can change my community.</string>
+    <string name="opportunities_to_better_myself_and_my_family">I look for opportunities to better myself and my family.</string>
+    <string name="accomplish_for_yourself_while_your_child_is_enrolled">What do you hope to accomplish for yourself while your child is enrolled in Early Head Start/Head Start?</string>
+    
+    
+    <string name="HOME_LITERACY_ENVIRONMENT">HOME LITERACY ENVIRONMENT</string>
+	<string name="crayons_pencils_and_paper_available">My child has crayons, pencils, and paper available for writing and drawing.</string>
+	<string name="access_to_at_least_10_picture_books">My child has access to at least 10 picture books.</string>
+	<string name="read_a_picture_book_with_my_child">I read a picture book with my child at least four times a week.</string>
+	<string name="have_detailed_and_informative_conversations">I have detailed and informative conversations with my child.</string>
+	<string name="sees_me_reading_books">My child sees me reading books, magazines or the newspaper at home.</string>
+	<string name="a_good_reader_and_feel_comfortable">I am a good reader and feel comfortable reading aloud to my child.</string>
+	<string name="my_child_will_work_to_his_or_her_potential">I expect that my child will work to his or her potential in school.</string>
+	<string name="introduced_your_child_to_the_alphabet">If you have introduced your child to the alphabet, please describe what you have done to support alphabetic awareness.</string>
+	<string name="Do_you_have_a_library_card">Do you have a library card? If so, how often do you and your child visit the library and what services do you use?</string>
+	
+	
+	
+	
+	<string name="the_parent_and_i">"\nThe parent and I decided that for our next visit:"</string>
+	<string name="continue_same_action_step">Continue same action step</string>
+	<string name="new_action_step">New Action Step</string>
+	<string name="parents_description_of_smart_action_step">
+	    "\nParent's description of how he(she) used the SMART Action Step since our last visit"
+	    "\n(\"What Action Step used? How did it go? What worked? What was difficult?\")"</string>
+	<string name="please_describe_why">"\nPlease describe why you and the parent decided to continue or change the SMART Action Step:"</string>
+	
+	
+	<string name="new_smart_aciton_step_planning_with_parent">"\nNew SMART Action Step Planning with Parent"</string>
+	<string name="what_will_you_do">
+	    "\n\"What will you do to get to your goal?\""
+	    "\n\n**Only complete if a new SMART Action Step will be developed this home visit**"
+	    "\n\n\nOur new SMART Action Step"</string>
+	<string name="record_your_action_step">
+	    "\nRecord your Action Step that is:"
+	    "\nSpecific (Who? What? Where?) and Timely (When?)"</string>
+	<string name="evaluate_the_new_smart_action_step">
+	    "\nEvaluate the New SMART Action Step"
+	    "\n\nHow do you know that this Action Step is:"
+	    "\nMeasurable (Indicators of Progress), Attainable, and Realistic"</string>
+	<string name="record_of_progress">
+	    "\nRecord of Progress Toward meeting Goal"
+	    "\n\nParent's view of the progress toward meeting the SMART Goal:"</string>
+	<string-array name="view_levels">
+	    <item>0: Moving much further from meeting Goal</item>
+	    <item>1: Moving further from meeting Goal</item>
+	    <item>2: No change in progress toward Goal</item>
+	    <item>3: Moving closer to meeting Goal</item>
+	    <item>4: Moving much closer to meeting Goal</item>
+	    <item>5: Goal is met</item>
+	</string-array>
+	
+	<string name="will_you_and_the_parent_continue">"\nWill you and the parent continue to work on the same SMART Goal?"</string>
+
+	<string name="if_yes_explain_why">"\nIf yes, explain why:"</string>
+	<string name="if_no_or_your_first_goal">"\nIf no, or your first goal, select:"</string>
+	<string name="tap_here_to_complete">
+	    "Tap here to complete:"
+	    "\nNew Smart Goal Planning with Parent"</string>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</resources>

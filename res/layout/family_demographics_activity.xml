@@ -1,0 +1,1481 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+    		android:paddingLeft="@dimen/activity_horizontal_margin"
+    		android:paddingRight="@dimen/activity_horizontal_margin"
+    		android:paddingTop="@dimen/activity_vertical_margin"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/item_vertical_margin"
+                android:text="@string/head_start_family_demographics"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/childs_name"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/childs_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/birthday"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/birthday"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editDateTime"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/start_date"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/start_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editDateTime"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/address"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="3"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/temporary_living_condition"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/temporary_living_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/transportation"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			<RadioGroup
+                android:id="@+id/transportation"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    <RadioButton android:id="@+id/transportation_radio_0"
+			        android:tag="1"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:checked="true"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/self_transport"/>
+			    <RadioButton android:id="@+id/transportation_radio_1"
+			        android:tag="2"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/bussed"/>
+			</RadioGroup>       
+            
+			
+			
+			<ImageView 
+		        android:contentDescription="@string/separator"
+		   	    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="40dp"
+			    android:scaleX="10"
+			    android:src="@drawable/imageview_separator" />
+			
+			
+			
+			
+			<!-- Primary Contact Person -->
+			
+			
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/primary_contact_person"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/primary_contact_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/phone"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/primary_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			
+            
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/relationship"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <RadioGroup
+                android:id="@+id/primary_contact_person_relationship"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    <RadioButton android:id="@+id/primary_contact_person_relationship_mother"
+			        android:tag="1"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:checked="true"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/mother"/>
+			    <RadioButton android:id="@+id/primary_contact_person_relationship_father"
+			        android:tag="2"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/father"/>
+			    <RadioButton android:id="@+id/primary_contact_person_relationship_other"
+			        android:tag="3"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/other"/>
+			</RadioGroup>
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin_for_if_other"
+                android:text="@string/if_other"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			<TextView
+                android:id="@+id/primary_contact_person_relationship_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+			
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/preferred_method_of_contact"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <RadioGroup
+                android:id="@+id/primary_contact_person_preferred_method_of_contact"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    <RadioButton android:id="@+id/primary_contact_person_phone"
+			        android:tag="1"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:checked="true"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/phone"/>
+			    <RadioButton android:id="@+id/primary_contact_person_email"
+			        android:tag="2"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/email"/>
+			    <RadioButton android:id="@+id/primary_contact_person_text"
+			        android:tag="3"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/text"/>
+			</RadioGroup>
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin_for_if_other"
+                android:text="@string/of_which_the_content_is"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			<TextView
+                android:id="@+id/primary_contact_person_preferred_method_of_contact_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/best_availability"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <RadioGroup
+                android:id="@+id/primary_contact_person_best_availability"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    <RadioButton android:id="@+id/primary_contact_person_morning"
+			        android:tag="1"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:checked="true"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/morning"/>
+			    <RadioButton android:id="@+id/primary_contact_person_afternoon"
+			        android:tag="2"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/afternoon"/>
+			    <RadioButton android:id="@+id/primary_contact_person_evening"
+			        android:tag="3"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/evening"/>
+			    <RadioButton android:id="@+id/primary_contact_person_other"
+			        android:tag="4"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/other"/>
+			</RadioGroup>
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin_for_if_other"
+                android:text="@string/if_other"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			<TextView
+                android:id="@+id/primary_contact_person_best_availability_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/access_to_a_computer"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <RadioGroup
+                android:id="@+id/primary_contact_person_access_to_a_computer"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    <RadioButton android:id="@+id/primary_contact_person_yes"
+			        android:tag="1"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:checked="true"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/yes"/>
+			    <RadioButton android:id="@+id/primary_contact_person_no"
+			        android:tag="2"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/no"/>
+			</RadioGroup>
+			
+			
+            <ImageView 
+		        android:contentDescription="@string/separator"
+		   	    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="40dp"
+			    android:scaleX="10"
+			    android:src="@drawable/imageview_separator" />
+            
+            
+            <!-- Secondary Contact Person -->
+			
+			
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/secondary_contact_person"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/secondary_contact_person"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/phone"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/secondary_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			
+            
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/relationship"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <RadioGroup
+                android:id="@+id/secondary_contact_person_relationship"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    <RadioButton android:id="@+id/secondary_contact_person_relationship_mother"
+			        android:tag="1"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:checked="true"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/mother"/>
+			    <RadioButton android:id="@+id/secondary_contact_person_relationship_father"
+			        android:tag="2"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/father"/>
+			    <RadioButton android:id="@+id/secondary_contact_person_relationship_other"
+			        android:tag="3"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/other"/>
+			</RadioGroup>
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin_for_if_other"
+                android:text="@string/if_other"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			<TextView
+                android:id="@+id/secondary_contact_person_relationship_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+			
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/preferred_method_of_contact"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <RadioGroup
+                android:id="@+id/secondary_contact_person_preferred_method_of_contact"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    <RadioButton android:id="@+id/secondary_contact_person_phone"
+			        android:tag="1"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:checked="true"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/phone"/>
+			    <RadioButton android:id="@+id/secondary_contact_person_email"
+			        android:tag="2"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/email"/>
+			    <RadioButton android:id="@+id/secondary_contact_person_text"
+			        android:tag="3"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/text"/>
+			</RadioGroup>
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin_for_if_other"
+                android:text="@string/of_which_the_content_is"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			<TextView
+                android:id="@+id/secondary_contact_person_preferred_method_of_contact_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/best_availability"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <RadioGroup
+                android:id="@+id/secondary_contact_person_best_availability"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    <RadioButton android:id="@+id/secondary_contact_person_morning"
+			        android:tag="1"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:checked="true"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/morning"/>
+			    <RadioButton android:id="@+id/secondary_contact_person_afternoon"
+			        android:tag="2"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/afternoon"/>
+			    <RadioButton android:id="@+id/secondary_contact_person_evening"
+			        android:tag="3"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/evening"/>
+			    <RadioButton android:id="@+id/secondary_contact_person_other"
+			        android:tag="4"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/other"/>
+			</RadioGroup>
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin_for_if_other"
+                android:text="@string/if_other"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			<TextView
+                android:id="@+id/secondary_contact_person_best_availability_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/access_to_a_computer"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <RadioGroup
+                android:id="@+id/secondary_contact_person_access_to_a_computer"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    <RadioButton android:id="@+id/secondary_contact_person_yes"
+			        android:tag="1"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:checked="true"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/yes"/>
+			    <RadioButton android:id="@+id/secondary_contact_person_no"
+			        android:tag="2"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/no"/>
+			</RadioGroup>
+			
+			
+            <ImageView 
+		        android:contentDescription="@string/separator"
+		   	    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="40dp"
+			    android:scaleX="10"
+			    android:src="@drawable/imageview_separator" />
+            
+            
+            
+            <!-- Detailed Information -->
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/primary_language_spoken_at_home"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <RadioGroup
+                android:id="@+id/primary_language_spoken_at_home"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    <RadioButton android:id="@+id/primary_language_spoken_at_home_english"
+			        android:tag="1"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:checked="true"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/english"/>
+			    <RadioButton android:id="@+id/primary_language_spoken_at_home_spanish"
+			        android:tag="2"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/spanish"/>
+			    <RadioButton android:id="@+id/primary_language_spoken_at_home_arabic"
+			        android:tag="3"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/arabic"/>
+			    <RadioButton android:id="@+id/primary_language_spoken_at_home_other"
+			        android:tag="4"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/other"/>
+			</RadioGroup>
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin_for_if_other"
+                android:text="@string/if_other"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			<TextView
+                android:id="@+id/primary_language_spoken_at_home_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/is_either_parent_an_active_member"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			<TextView
+                android:id="@+id/is_either_parent_an_active_member"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			
+			
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/circle_resources"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <RadioGroup
+                android:id="@+id/circle_resources"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    <RadioButton android:id="@+id/circle_resources_tanf"
+			        android:tag="1"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:checked="true"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/tanf"/>
+			    <RadioButton android:id="@+id/circle_resources_ssi"
+			        android:tag="2"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/ssi"/>
+			    <RadioButton android:id="@+id/circle_resources_snap_food_stamps"
+			        android:tag="3"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/snap_food_stamps"/>
+			    <RadioButton android:id="@+id/circle_resources_wic"
+			        android:tag="4"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/wic"/>
+			    <RadioButton android:id="@+id/circle_resources_housing"
+			        android:tag="5"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/housing"/>
+			    <RadioButton android:id="@+id/circle_resources_child_support"
+			        android:tag="6"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/child_support"/>
+			    <RadioButton android:id="@+id/circle_resources_med_assist"
+			        android:tag="7"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/med_assist"/>
+			</RadioGroup>
+			
+			
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/do_you_receive_child_care_subsidy"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <RadioGroup
+                android:id="@+id/do_you_receive_child_care_subsidy"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    <RadioButton android:id="@+id/do_you_receive_child_care_subsidy_yes"
+			        android:tag="1"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:checked="true"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/yes"/>
+			    <RadioButton android:id="@+id/do_you_receive_child_care_subsidy_no"
+			        android:tag="2"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/no"/>
+			</RadioGroup>
+			
+			
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/is_this_child_in_foster_or_kin_care"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <RadioGroup
+                android:id="@+id/is_this_child_in_foster_or_kin_care"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    <RadioButton android:id="@+id/is_this_child_in_foster_or_kin_care_yes"
+			        android:tag="1"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:checked="true"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/yes"/>
+			    <RadioButton android:id="@+id/is_this_child_in_foster_or_kin_care_no"
+			        android:tag="2"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/no"/>
+			</RadioGroup>
+			
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/open_cy_case"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <RadioGroup
+                android:id="@+id/open_cy_case"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    <RadioButton android:id="@+id/open_cy_case_yes"
+			        android:tag="1"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:checked="true"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/yes"/>
+			    <RadioButton android:id="@+id/open_cy_case_no"
+			        android:tag="2"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/no"/>
+			</RadioGroup>
+			
+			
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/are_there_any_written_custody_arrangements"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <RadioGroup
+                android:id="@+id/are_there_any_written_custody_arrangements"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    <RadioButton android:id="@+id/are_there_any_written_custody_arrangements_yes"
+			        android:tag="1"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:checked="true"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/yes"/>
+			    <RadioButton android:id="@+id/are_there_any_written_custody_arrangements_no"
+			        android:tag="2"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/no"/>
+			</RadioGroup>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/pfa"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <RadioGroup
+                android:id="@+id/pfa"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    <RadioButton android:id="@+id/pfa_yes"
+			        android:tag="1"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:checked="true"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/yes"/>
+			    <RadioButton android:id="@+id/pfa_no"
+			        android:tag="2"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/no"/>
+			</RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin_for_if_other"
+                android:text="@string/against_whom"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			<TextView
+                android:id="@+id/against_whom_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/pc_rep"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <RadioGroup
+                android:id="@+id/pc_rep"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    <RadioButton android:id="@+id/pc_rep_yes"
+			        android:tag="1"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:checked="true"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/yes"/>
+			    <RadioButton android:id="@+id/pc_rep_no"
+			        android:tag="2"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/no"/>
+			</RadioGroup>
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/are_there_pets_in_the_home"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <RadioGroup
+                android:id="@+id/are_there_pets_in_the_home"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    <RadioButton android:id="@+id/are_there_pets_in_the_home_yes"
+			        android:tag="1"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:checked="true"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/yes"/>
+			    <RadioButton android:id="@+id/are_there_pets_in_the_home_no"
+			        android:tag="2"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/no"/>
+			</RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin_for_if_other"
+                android:text="@string/if_yes"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			<TextView
+                android:id="@+id/if_yes_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+            
+            
+            <ImageView 
+		        android:contentDescription="@string/separator"
+		   	    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="40dp"
+			    android:scaleX="10"
+			    android:src="@drawable/imageview_separator" />
+            
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/num_of_adults_living_in_household"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/num_of_adults_living_in_household"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="3"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            
+			
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/num_of_children_living_in_household"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/num_of_children_living_in_household"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="3"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			
+			
+			
+			<ImageView 
+		        android:contentDescription="@string/separator"
+		   	    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="40dp"
+			    android:scaleX="10"
+			    android:src="@drawable/imageview_separator" />
+			
+			
+			
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/num_of_years_parent_in_hs_ehs_program"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <TextView
+                android:id="@+id/num_of_years_parent_in_hs_ehs_program"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="3"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/sibling_in_HS_EHS"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <RadioGroup
+                android:id="@+id/sibling_in_HS_EHS"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    <RadioButton android:id="@+id/sibling_in_HS_EHS_yes"
+			        android:tag="1"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:checked="true"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/yes"/>
+			    <RadioButton android:id="@+id/sibling_in_HS_EHS_no"
+			        android:tag="2"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/no"/>
+			</RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin_for_if_other"
+                android:text="@string/of_which_the_content_is"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			<TextView
+                android:id="@+id/sibling_in_HS_EHS_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			
+			
+			<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin"
+                android:text="@string/does_child_receive_any_special_services"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+            <RadioGroup
+                android:id="@+id/does_child_receive_any_special_services"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+			    <RadioButton android:id="@+id/does_child_receive_any_special_services_yes"
+			        android:tag="1"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:checked="true"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/yes"/>
+			    <RadioButton android:id="@+id/does_child_receive_any_special_services_no"
+			        android:tag="2"
+			        android:layout_width="0dp"
+			        android:layout_height="@dimen/radiobutton_layout_height"
+			        android:layout_weight="1"
+			        android:singleLine="true"
+			        android:background="@drawable/radio_button_background"
+			        android:button="@null"
+			        android:gravity="center"
+			        android:textAppearance="?android:attr/textAppearanceLarge"
+			        android:text="@string/no"/>
+			</RadioGroup>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/item_vertical_margin_for_if_other"
+                android:text="@string/if_yes"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			<TextView
+                android:id="@+id/does_child_receive_any_special_services_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/clickable_textView_horizontal_padding"
+                android:paddingRight="@dimen/clickable_textView_horizontal_padding"
+                android:paddingTop="@dimen/clickable_textView_vertical_padding"
+                android:paddingBottom="@dimen/clickable_textView_vertical_padding"
+                android:background="@drawable/clickable_textview_bg"
+                android:clickable="true"
+                android:onClick="editTextDialog"
+                android:lines="1"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+			
+			
+
+            
+            <Button
+                android:id="@+id/button_done"
+                android:layout_width="@dimen/button_done_layout_width"
+                android:layout_height="@dimen/button_done_layout_height"
+                android:layout_margin="@dimen/button_done_margin"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:onClick="onDoneForm"
+                android:text="@string/done"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
